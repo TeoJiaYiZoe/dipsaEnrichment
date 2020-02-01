@@ -1,0 +1,6 @@
+<mat-action-list>
+    <h1 mat-subheader>{{game}}</h1>
+    <button mat-list-item *ngFor="let r of categoryList.boardgamename" (click)="selected(r.id)">
+        {{r.primary}}
+    </button>
+</mat-action-list>

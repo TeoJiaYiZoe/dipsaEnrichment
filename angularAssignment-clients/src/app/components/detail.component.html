@@ -1,0 +1,15 @@
+
+<h2 mat-subheader>{{boardGameDetail.primary}}</h2>
+
+<mat-list class="my-class">
+    <mat-list-item>Board Game Category: {{boardGameDetail.boardgamecategory}}</mat-list-item>
+    <mat-list-item>No. of Players: {{boardGameDetail.minplayers}} - {{boardGameDetail.maxplayers}}</mat-list-item>
+    <mat-list-item>maximum Playtime: {{boardGameDetail.maxplaytime}}</mat-list-item>
+    <mat-list-item>Type of Game: {{boardGameDetail.type}}</mat-list-item>
+    <mat-list-item>Year Published: {{boardGameDetail.yearpublished}}</mat-list-item>
+
+        <button mat-list-item (click)="selected(boardGameDetail.id)">
+                comments
+            </button>
+
+        </mat-list>

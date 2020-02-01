@@ -1,0 +1,17 @@
+
+<button mat-list-item (click)="selected(boardGameDetail.id)">
+    create
+</button>
+<mat-list>
+    <mat-list-item class="mat-list-item-word-wrap" *ngFor="let c of boardGameCommentsList.commentlist">
+        User: {{c.user}}
+        <br>
+        Rating: {{c.rating}}
+        <br>
+        Comment: {{c.comment}}
+        <br>
+        <br>
+    </mat-list-item>
+
+</mat-list>
+

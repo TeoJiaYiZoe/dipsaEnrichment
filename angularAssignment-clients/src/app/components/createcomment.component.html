@@ -1,0 +1,25 @@
+<form #thisform="ngForm" fxLayout="column" fxLayoutAlign="start stretch" 
+fxLayoutGap="1vh" 
+(ngSubmit)="processForm(thisform)">
+<mat-form-field>
+  <input type="text" readonly matInput name="name" [value]="boardGameDetail?.primary"
+    placeholder="Boardgame Name" ngModel>
+</mat-form-field>  
+<mat-form-field>
+  <input type="text" readonly matInput name="id" [value]="boardGameDetail?.id" placeholder="Boardgame ID"
+    ngModel>
+</mat-form-field>
+<mat-form-field>
+    <input type="text" matInput name="user" placeholder="user" ngModel>
+  </mat-form-field>
+  <mat-form-field>
+    <input type="text" matInput name="rating" placeholder="Boardgame Rating" ngModel>
+  </mat-form-field>
+  <mat-form-field>
+    <input type="text" matInput name="comment" placeholder="Boardgame Comment" ngModel>
+  </mat-form-field>
+  <div fxLayout="row" fxLayoutAlign="space-around">
+    <button mat-raised-button color="accent" type="submit">submit</button>
+  </div>
+</form>
+        
