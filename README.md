@@ -11,4 +11,6 @@ Application include the following mandatory views:
   4. List comments for a boardgames
   5. Post your own comments. You do not need to create user registration.
 
-Deployed using Docker : http://178.128.48.234/
+Deployed using Docker : http://178.128.48.234/ (no longer be deployed by 5 March 2020)
+
+
